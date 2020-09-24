@@ -70,7 +70,7 @@ public class People {
 	//   because we can not foresee how many people will be the best matches. 
 	public ArrayList<Integer> bestMatchPersons (int[] matchNums, int maxMatchNum) {
 		ArrayList<Integer> bestMatchIndices = new ArrayList<Integer>();
-		for (int i = 0; i<matchNums.length; i++) {
+		for (int i = 0; i < matchNums.length; i++) {
 			if (matchNums[i] == maxMatchNum) {
 				bestMatchIndices.add(i);
 			}
@@ -81,12 +81,12 @@ public class People {
 	// Given the list of best matching Persons' indices, display their names and 
 	//   hobbies by following the requirements in the Project Description document. 
 	public void displayPersons (ArrayList<Integer> bestMatchIndices) {
-		for (int i = 0; i<bestMatchIndices.size(); i++) {
+		for (int i = 0; i < bestMatchIndices.size(); i++) {
 			Person person = this.people.get(bestMatchIndices.get(i));
-			System.out.print(person.getLastName()+", "+person.getFirstName()+" : ");
+			System.out.print(person.getLastName()+", "+person.getFirstName() + " : ");
 			String [] hobbies = person.getHobbies();
 			for (int j = 0; j<hobbies.length; j++) {
-				System.out.print(hobbies[j]+", ");
+				System.out.print(hobbies[j] + ", ");
 			}
 				System.out.println();
 			}
