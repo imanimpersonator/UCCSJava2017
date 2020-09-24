@@ -40,7 +40,7 @@ public class Person {
 		int matchNum = 0;
 		String[] theirHobbies = p.getHobbies();
 		for (int i  = 0; i< hobbies.length; i++) {
-			for (int j = 0; j< theirHobbies.length; j++) {
+			for (int j = 0; j < theirHobbies.length; j++) {
 				if (theirHobbies[j].equals(hobbies[i])) {
 					matchNum++;
 				}
