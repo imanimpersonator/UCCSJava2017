@@ -20,7 +20,7 @@ public class Start {
 		
 		System.out.println("Starting Decoders's work: ");
 		
-		System.out.println("Number of Students: "+ppl.size());
+		System.out.println("Number of Students: " + ppl.size());
 		Scanner scan = new Scanner(System.in);
 		
 		boolean stop = false;
@@ -38,8 +38,8 @@ public class Start {
 			else {
 				Person person = ppl.get(j);
 				System.out.print(firstName + " " + lastName + " found! Hobbies include: ");
-				for (int k = 0; k<person.getHobbies().length; k++) {
-					System.out.print(person.getHobbies()[k]+", ");
+				for (int k = 0; k < person.getHobbies().length; k++) {
+					System.out.print(person.getHobbies()[k] + ", ");
 				}
 				System.out.println();
 				int[] matchNums = people.findAllMatchNums(j);
@@ -49,7 +49,7 @@ public class Start {
 				people.displayPersons(bestMatches);
 			}
 			System.out.println("Do you want to continue? Y/N");
-			String cont= scan.next();
+			String cont = scan.next();
 			if (cont.equals("N")) {
 				stop = true;
 			}
