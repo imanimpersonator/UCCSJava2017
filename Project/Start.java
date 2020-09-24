@@ -33,11 +33,11 @@ public class Start {
 			//loop start
 			int j = people.findPerson(firstName, lastName);
 			if (j == -1) {
-				System.out.println(firstName+" "+lastName+" not found.");
+				System.out.println(firstName + " " + lastName + " not found.");
 			}
 			else {
 				Person person = ppl.get(j);
-				System.out.print(firstName+" "+lastName+" found! Hobbies include: ");
+				System.out.print(firstName + " " + lastName + " found! Hobbies include: ");
 				for (int k = 0; k<person.getHobbies().length; k++) {
 					System.out.print(person.getHobbies()[k]+", ");
 				}
@@ -45,7 +45,7 @@ public class Start {
 				int[] matchNums = people.findAllMatchNums(j);
 				int maxMatchNum = people.findMaxMatchNum(matchNums);
 				ArrayList<Integer> bestMatches = people.bestMatchPersons(matchNums, maxMatchNum);
-				System.out.println("Best matches for "+firstName+" "+lastName+" are:");
+				System.out.println("Best matches for " + firstName + " " + lastName + " are:");
 				people.displayPersons(bestMatches);
 			}
 			System.out.println("Do you want to continue? Y/N");
